@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/sombra4.css">
+</head>
+<body>
+    <div class="caja caja-sombra">
+      <h2>Ejemplo 4</h2>
+      <p>Sombra inferior perspectiva</p></div>
+     <pre class="ejemplo1">
+      
+     <div class="select">.caja</div><div class="corcht">{</div>
+    
+    width: 200px;
+    height: 150px;
+    background-color: #f4f4f4;
+<div class="corcht">}</div>
+<div class="select">.caja-sombra</div><div class="corcht">{</div>
+    position: relative;
+    float: left;
+    padding: 1em;
+    margin: 100px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+<div class="corcht">}</div>
+<div class="select">.caja-sombra:before, .caja-sombra:after</div>{
+    content: "";
+    position: absolute;
+    z-index: -2;
+<div class="corcht">}</div>
+<div class="select">.caja-sombra</div>{
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), <br>
+    0 0 40px rgba(0, 0, 0, 0.1) inset
+<div class="corcht">}</div>
+      </pre>
+</body>
+</html>

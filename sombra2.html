@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/sombra2.css">
+</head>
+<body>
+    <div class="caja caja-sombra">
+      <h2>Ejemplo 2</h2>
+      <p>Sombra esquinas inferiores</p>
+    </div>
+    <pre class="ejemplo1">
+<div class="select">.caja</div><div class="corcht">{</div>
+    width: 200px;
+    height: 150px;
+    background-color: #f4f4f4;
+<div class="corcht">}</div>
+<div class="select">.caja-sombra</div><div class="corcht">{</div>
+    position: relative;
+    float: left;
+    padding: 1em;
+    margin: 100px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+<div class="corcht">}</div>
+<div class="select">.caja-sombra:before, .caja-sombra:after</div>{
+    content: "";
+    position: absolute;
+    z-index: -2;
+<div class="corcht">}</div>
+<div class="select">.caja-sombra:before</div><div class="corcht">{</div>
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    height: 20%;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+<div class="corcht">}</div>
+<div class="select">.caja-sombra:after</div><div class="corcht">{</div>
+    bottom: 15px;
+    width: 50%;
+    height: 20%;
+    right: 10px;
+    left: auto;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    transform: rotate(5deg);
+<div class="corcht">}</div>
+    </pre>
+</body>
+</html>

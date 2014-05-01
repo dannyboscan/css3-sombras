@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/sombra6.css">
+</head>
+<body>
+
+    <div class="caja caja-sombra"><h2>Ejemplo 6</h2>
+      <p>Sombras esquinas levantadas</p>
+        <div class="sombra-abajo-derecha"></div>
+        <div class="sombra-abajo-izquierda"></div>
+    </div>
+    <pre class="ejemplo1">
+    <div class="select">.caja</div><div class="corcht">{</div>
+    
+    width: 200px;
+    height: 150px;
+    background-color: #f4f4f4;
+}
+<div class="select">.caja-sombra</div><div class="corcht">{</div>
+    position: relative;
+    float: left;
+    padding: 1em;
+    margin: 100px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+<div class="corcht">}</div>
+<div class="select">.caja-sombra:before, .caja-sombra:after</div><div class="corcht">{</div>
+    content: "";
+    position: absolute;
+    z-index: -2;
+<div class="corcht">}</div>
+<div class="select">.caja-sombra:before</div><div class="corcht">{</div>
+    width: 24px;
+    height: 46%;
+    top: 0;
+    right: -10px;
+    display: inline-block;
+    box-shadow: 10px -10px 10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: rotate(2deg) translate(-20px, 25px) skew(-6deg);
+    -moz-transform: rotate(2deg) translate(-20px, 25px) skew(-6deg);
+    -o-transform: rotate(2deg) translate(-20px, 25px) skew(-6deg);
+    transform: rotate(2deg) translate(-20px, 25px) skew(-6deg);
+<div class="corcht">}</div>
+<div class="select">.caja-sombra:after</div><div class="corcht">{</div>
+    display: inline-block;
+    height: 46%;
+    left: -10px;
+    top: 0;
+    width: 24px;
+    box-shadow: -10px -10px 10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: rotate(2deg) translate(20px,25px) skew(6deg);
+    -moz-transform: rotate(2deg) translate(20px,25px) skew(6deg);
+    -o-transform: rotate(2deg) translate(20px,25px) skew(6deg);
+    transform: rotate(2deg) translate(20px,25px) skew(6deg);
+<div class="corcht">}</div>
+<div class="select">.sombra-abajo-derecha</div><div class="corcht">{</div>
+    content: '';
+    width: 24px;
+    height: 46%;
+    bottom: 0;
+    right: -10px;
+    position: absolute;
+    z-index: -1;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: rotate(-2deg) translate(-20px,-25px) skew(6deg);
+    -moz-transform: rotate(-2deg) translate(-20px,-25px) skew(6deg);
+    -o-transform: rotate(-2deg) translate(-20px,-25px) skew(6deg);
+    transform: rotate(-2deg) translate(-20px,-25px) skew(6deg);
+<div class="corcht">}</div>
+<div class="select">.sombra-abajo-izquierda</div><div class="corcht">{</div>
+    content: '';
+    width: 24px;
+    height: 46%;
+    bottom: 0;
+    left: -10px;
+    position: absolute;
+    z-index: -1;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: rotate(-2deg) translate(20px,-25px) skew(-6deg);
+    -moz-transform: rotate(-2deg) translate(20px,-25px) skew(-6deg);
+    -o-transform: rotate(-2deg) translate(20px,-25px) skew(-6deg);
+    transform: rotate(-2deg) translate(20px,-25px) skew(-6deg);
+<div class="corcht">}</div>
+ </pre>
+</body>
+</html>

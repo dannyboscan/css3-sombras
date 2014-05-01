@@ -1,0 +1,65 @@
+body {
+    background: #EFEBD2;
+}
+pre.ejemplo1 div.select {
+    color: red;
+    float: left;
+}
+pre.ejemplo1 div.corcht {
+    color: blue;
+    float: left;
+}
+body pre.ejemplo1 {
+    float: left;
+}
+div.caja p {
+    color: #777;
+    text-align: center;
+    font-family: arial;
+}
+div.caja h2 {
+    color: #888;
+    font-size: 31px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+.caja
+{
+    width: 200px;
+    height: 150px;
+    background-color: #f4f4f4;
+}
+.caja-sombra
+{
+    position: relative;
+    float: left;
+    padding: 1em;
+    margin: 10px 30px 0;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.caja-sombra:before, .caja-sombra:after
+{
+    content: "";
+    position: absolute;
+    z-index: -2;
+}
+.sombra1:before
+{
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 50%;
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    -moz-border-radius: 5px / 100px;
+    border-radius: 5px / 100px;
+}
+.sombra2:before
+{
+    right: 0
+}
