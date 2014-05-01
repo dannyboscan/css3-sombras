@@ -1,4 +1,4 @@
-css3-sombras
+CSS3 Sombras
 ============
 
 
